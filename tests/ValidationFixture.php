@@ -12,7 +12,7 @@ use romi45\yii2jsonvalidator\JsonValidator;
  */
 class ValidationFixture extends Model
 {
-    /** @var string Foo!!! */
+    /** @var string */
     public $foo;
 
     /**

@@ -10,22 +10,19 @@ A Yii2 extension that provides JSON validation
 $ composer require romi45/yii2-json-validator
 ```
 
-## Usage
-
-Model class example:
+## Usage example
 
 ```php
 <?php
 
 namespace app\models;
 
-use Yii;
 use yii\base\Model;
 use romi45\yii2jsonvalidator\JsonValidator;
 
 class MyModel extends Model
 {
-    public $json;
+    public $property_to_validate;
 
     public function rules()
     {
@@ -41,5 +38,5 @@ class MyModel extends Model
 ```
 
 View public properties in class
-[JsonValidator](https://github.com/romi45/yii2-json-validator/blob/master/JsonValidator.php)
+[JsonValidator](https://github.com/romi45/yii2-json-validator/blob/master/src/JsonValidator.php)
 to get info about all available options.

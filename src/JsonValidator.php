@@ -41,15 +41,13 @@ class JsonValidator extends Validator
      */
     protected function validateValue($value)
     {
-        if (!is_string($value)) {
+        if (!is_string($value))
             return [$this->notStringMsg, []];
-        }
 
         json_decode($value);
 
-        if (json_last_error()) {
+        if (json_last_error())
             return [$this->invalidJsonMsg, []];
-        }
 
         return null;
     }
