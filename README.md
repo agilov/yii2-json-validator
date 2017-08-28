@@ -7,7 +7,7 @@ A Yii2 extension that provides JSON validation
 ## Installation
 
 ```
-$ composer require romi45/yii2-json-validator
+$ composer require romi45/yii2-json-validator ~1.1
 ```
 
 ## Usage example
