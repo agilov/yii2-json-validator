@@ -1,6 +1,6 @@
 # Yii 2 JSON Validator
 
-[![Build Status](https://travis-ci.org/romi45/yii2-json-validator.svg?branch=master)](https://travis-ci.org/romi45/yii2-json-validator)
+[![Build Status](https://travis-ci.org/romi45/yii2-json-validator.svg)](https://travis-ci.org/romi45/yii2-json-validator)
 
 A Yii2 extension that provides JSON validation
 
@@ -34,7 +34,7 @@ class MyModel extends Model
                 'property_to_validate',
                 JsonValidator::class,
                 'invalidJsonMsg' => 'OMG!!! this is a custom error message!'
-            ],
+            ]
         ];
     }
 }
