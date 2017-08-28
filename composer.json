@@ -1,0 +1,39 @@
+{
+  "name": "romi45/yii2-json-validator",
+  "description": "A Yii2 extension that provides JSON validation",
+  "keywords": [
+    "yii2",
+    "json",
+    "validator"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/romi45/yii2-json-validator/issues",
+    "source": "https://github.com/romi45/yii2-json-validator"
+  },
+  "authors": [
+    {
+      "name": "Roman Agilov",
+      "email": "agilovr@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": ">=2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "romi45\\yii2jsonvalidator\\": "src/",
+      "romi45\\yii2jsonvalidator\\tests\\": "tests/"
+    }
+  }
+}
