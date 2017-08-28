@@ -20,19 +20,13 @@ namespace app\models;
 use yii\base\Model;
 use romi45\yii2jsonvalidator\JsonValidator;
 
-class MyModel extends Model
+class Foo extends Model
 {
-    public $property_to_validate;
+    public $bar;
 
     public function rules()
     {
-        return [
-            [
-                'property_to_validate',
-                JsonValidator::class,
-                'invalidJsonMsg' => 'OMG!!! this is a custom error message!'
-            ]
-        ];
+        return [['bar', JsonValidator::class]];
     }
 }
 ```
