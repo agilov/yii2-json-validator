@@ -33,7 +33,7 @@ class JsonValidator extends Validator
             $this->notStringMsg = Yii::t('app', 'The value must be a string.');
 
         if ($this->invalidJsonMsg === null)
-            $this->invalidJsonMsg = Yii::t('app', 'The value must be a valid JSON string.');
+            $this->invalidJsonMsg = Yii::t('app', 'The value must be a valid JSON string. {extendedMessage}.');
     }
 
     /**
@@ -47,7 +47,7 @@ class JsonValidator extends Validator
         json_decode($value);
 
         if (json_last_error())
-            return [$this->invalidJsonMsg, []];
+            return [$this->invalidJsonMsg, ['extendedMessage' => json_last_error_msg()]];
 
         return null;
     }
